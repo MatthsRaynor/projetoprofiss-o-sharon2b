@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Instituto de Perícia Criminal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">IPC<span>Forense</span></a>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Estamos à disposição para esclarecer dúvidas e receber sua demanda</p>
+        </div>
+    </header>
+
+    <!-- Formulário de Contato -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="contato-form">
+                <h2>Envie uma Mensagem</h2>
+                <form id="formContato" action="https://formsubmit.co/dourado.sharon@escola.pr.gov.br" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto*</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="Orçamento">Solicitação de Orçamento</option>
+                            <option value="Dúvida">Dúvida sobre Serviços</option>
+                            <option value="Trabalhe conosco">Trabalhe Conosco</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <div class="contato-info">
+                <h2>Informações de Contato</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>Av. da Justiça, 123 - Centro<br>Curitiba - PR, 80000-000</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Telefones</h3>
+                        <p>(41) 3333-4444<br>(41) 99999-8888 (Plantão)</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p>contato@ipcforense.com.br<br>plantao@ipcforense.com.br</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h<br>Plantão 24h para emergências</p>
+                    </div>
+                </div>
+                
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.238539189441!2d-49.2694679243359!3d-25.45687787755096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce472f8f33f1f%3A0x9f7242959f0111e!2sPal%C3%A1cio%20da%20Justi%C3%A7a%20do%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1689873181763!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes -->
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <button class="faq-pergunta">
+                    Qual o prazo para realização de uma perícia?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-resposta">
+                    <p>O prazo varia conforme a complexidade do caso e os exames necessários. Casos simples podem ser concluídos em 7-10 dias úteis, enquanto análises mais complexas (como DNA ou forense digital) podem levar de 15 a 30 dias. Emergências judiciais têm prazos especiais.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-pergunta">
+                    Vocês emitem laudos com validade judicial?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-resposta">
+                    <p>Sim, todos nossos laudos são elaborados por peritos criminais registrados e seguem os requisitos técnicos e legais para ter validade em processos judiciais. Também oferecemos suporte técnico para esclarecimentos em audiências.</p>
+                </div>
+            </div>
+            
+            <div class
